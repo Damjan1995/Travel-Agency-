@@ -1,0 +1,88 @@
+Event listener for the changeCurrencyBtn button that changes the currency from EU to USD
+// changeCurrencyBtn.addEventListener("click", function () {
+//   const price = document.querySelectorAll(".price");
+
+//   const convertToArray = Array.from(price);
+//   const innerTextArray = convertToArray.map((item) => {
+//     if (item.innerHTML.charAt(0) === "$") {
+//     }
+//   });
+// });
+
+// const availibeDestinations = [
+//   {destination:'London' ,status: false},
+//   {destination: 'Miami' ,status: true},
+//   {destination: 'Vienna' ,status: true},
+//   {destination: 'Saranda' ,status: false}
+// ]
+
+// const sortAvalible = document.getElementById('sortAvalible');
+
+// function crateElements(locations){
+//   const para = document.createElement('p');
+//   para.textContent = locations.destination;
+//   document.body.appendChild(para);
+// }
+
+// sortAvalible.addEventListener('click', function(){
+//  const valueTrue = availibeDestinations.filter(item => item.status === true);
+
+//  valueTrue.forEach(value =>
+//   crateElements(value)
+//   )
+//   sortAvalible.disabled = true;
+//   console.log(valueTrue);
+// })
+
+--------------------------------------------------------------------------------
+KOD OD 07.06
+
+  let emptyArray = [];
+  emptyArray.push(locationsInput.value);
+  const firstCharValue = emptyArray.map(item => item.charAt(0).toUpperCase());
+  const restOfTheString = emptyArray.map(item => item.slice(1));
+
+  
+  emptyArray.push(firstCharValue);
+  emptyArray.push(restOfTheString); 
+
+  const concatedString = firstCharValue + restOfTheString;
+  const lowerCaseStringToArray = Array.from(concatedString).join('');
+
+  
+  console.log(lowerCaseStringToArray);
+  
+  if(locationsInput.value.indexOf(' ') >= 0){
+    let emptyArray2 = [];
+    emptyArray2.push(locationsInput.value);
+    const secondStringCharValue = emptyArray2.map(item => item.charAt(0).toUpperCase());
+    const restOfTheString2 = emptyArray2.map(item => item.slice(1));
+
+    emptyArray2.push(secondStringCharValue);
+    emptyArray2.push(restOfTheString2);
+    
+    console.log(secondStringCharValue + restOfTheString2)
+  }
+
+
+
+
+-------------------------------------------------------------------------------
+
+
+HTML
+
+
+        <!-- <div id="searchbarForLocations">
+          <p>Search for location</p>
+          <input type="text" id="locationsInput">
+          <button type="button" id="searchbarButton"><img src="search.png" 		  alt="magnifying-glass"></button>
+        </div> -->
+
+--------------------------------------------------------------------------------
+
+    <!-- <div id="discount-section">
+      <p>Get this summers hot esclusive discount for one week vacation <b id="procent">20%</b>. <br>
+      See the available destinations.</p>
+      <button type="button" id="sortAvalible">See avalible</button>
+    </div> -->

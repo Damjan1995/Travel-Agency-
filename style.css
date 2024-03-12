@@ -1,0 +1,257 @@
+#landingPageImg{
+    background-image: url("main-image.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    width: auto;
+}
+
+/* Navbar */
+
+.container-fluid{
+    background-color: #2B2730;
+    position: fixed;
+    padding-top: 20px;
+    margin-top: 10px;
+    height: 15%;
+}
+
+.navbar-brand{
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Oswald';
+    letter-spacing: 1px;
+}
+
+#changeCurrencyBtn{
+    margin-top: 80px;
+    margin-bottom: 70px;
+    margin-left: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: orange;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 10px;
+    width: 150px;
+}
+
+.exclusivePricesParagraph{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Search bar */
+#locationsInput{
+    margin-top: auto;
+    margin-left: 800px;
+}
+/* #searchbarForLocations{
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+} */
+
+#searchbarButton{
+    background-color: #0A6EBD;
+}
+
+/* Page layout button*/
+
+#changePageLayot{
+    border: none;
+}
+
+/* Modal window */
+
+#modal-window{
+    background-color: #F7FFE5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 50%;
+    height: 350px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.hidden{
+    display: block;
+}
+
+.joinNow{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.infoText{
+    color: gray;
+}
+
+#modalBtn{
+    width: 300px;
+    background-color: #FCE22A;
+    font-family: 'arial';
+    color: #3E54AC;
+    font-size: 17px;
+    padding: 5px;
+    border: none;
+}
+
+#modalBtn:hover {
+    background-color: #ffeb55; 
+    color: #3E54AC;
+  }
+
+.cardDiv{
+    margin-bottom: 600px;
+    padding-bottom: 100px;
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.cardDivInnerContent{
+    padding: 20px;
+}
+.cardImage{
+    width: 350px;
+    height: 250px;
+    padding-bottom: 15px;
+}
+
+
+#locations-wraper{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cards style */
+
+.location-name{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.days{
+    font-size: 18px;
+}
+
+.price{
+    color: #0A6EBD;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.bookNowBtn{
+    border-radius: 5px;
+    border: solid 2px  #0A6EBD ;
+    background-color: transparent;
+    padding: 10px;
+    width: 150px;
+}
+
+.bookNowBtn:hover{
+    background-color: #0A6EBD;
+    color: #fff;
+}
+
+#closeModalBtn{
+ font-size: 35px;
+ position: relative;
+ margin-left: 80%;
+ margin-bottom: 50px;
+}
+
+/* Booking card & making payment */
+
+.hide{
+    display: none;
+}
+
+.bookNowForm{
+    width: 900px;
+    height: 650px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(212, 215, 218);
+    display: flex;
+    flex-direction: row;
+}
+
+#payNowButton{
+    width: 600px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background-color: #0A6EBD;
+    color: #fff;
+    font-size: 20px;
+}
+
+.boldedTxt{
+    text-align: left;
+    font-weight: bold;
+}
+
+.normalTxt{
+    font-size: 13px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cardBrandLogos{
+    padding: 40px;
+}
+
+.ccvNumber{
+    justify-content: right;
+    width: 100px;
+    height: 50px;
+    border: #0A6EBD solid 1px;
+    text-align: center;
+}
+
+
+/* Footer section */
+.footerWraper{
+    background-color: #0A6EBD;
+    color: #fff;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    margin-top: 200px;
+    font-size: 14px;
+    
+}   
+
+ol li{
+    list-style: none;
+  }
+
+.companyInfo, .usefulLinks{
+font-size: 15px;
+
+}
+
+#pageLayoutDiv{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+
